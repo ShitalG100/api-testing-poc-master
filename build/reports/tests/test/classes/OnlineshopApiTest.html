@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class OnlineshopApiTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class OnlineshopApiTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/default-package.html">default-package</a> &gt; OnlineshopApiTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">6</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">1m35.07s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">createProduct_checkId_ShouldReturnNewProduct()</td>
+<td class="success">1m24.26s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">deleteNewOwners_throughID_ShouldDisplayDeletedId()</td>
+<td class="success">1.215s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">getOrdersSummary_fromCart()</td>
+<td class="success">4.012s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">getProduct_DefaultLimit_ShouldReturn10Results()</td>
+<td class="success">1.514s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">getServices_Header()</td>
+<td class="success">1.978s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">getServices_StatusCode()</td>
+<td class="success">2.091s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>16:45:20.863 - [OnlineshopApiClient] INFO  : Initiated petclinic.api.onlineshop.OnlineshopApiClient instance
+amount : 100.00
+name : SHUBHANGI
+currency : INR
+id : 71
+16:45:22.166 - [ApiCaller] INFO  : Request:
+Request URI:	http://petclinicapi.e46708b92c054086909b.eastus.aksapp.io/petclinic/api/shop/addtocart/
+Body:
+{&quot;name&quot;:&quot;SHUBHANGI&quot;,&quot;currency&quot;:&quot;INR&quot;,&quot;id&quot;:&quot;71&quot;,&quot;amount&quot;:&quot;100.00&quot;,&quot;quantity&quot;:0}
+16:45:35.722 - [ApiCaller] INFO  : Response:
+HTTP/1.1 200 
+{&quot;id&quot;:71,&quot;name&quot;:&quot;SHUBHANGI&quot;,&quot;amount&quot;:100.00,&quot;quantity&quot;:1,&quot;currency&quot;:&quot;INR&quot;}
+16:46:15.206 - [OnlineshopApiClient] INFO  : Initiated petclinic.api.onlineshop.OnlineshopApiClient instance
+16:46:15.206 - [ApiCaller] INFO  : Request:
+Request URI:	http://petclinicapi.e46708b92c054086909b.eastus.aksapp.io/petclinic/api/shop/getproducts
+Body:			&lt;none&gt;
+16:46:16.647 - [ApiCaller] INFO  : Response:
+HTTP/1.1 200 
+[{&quot;id&quot;:1,&quot;name&quot;:&quot;Kennel Kitchen&quot;,&quot;amount&quot;:635.00,&quot;currency&quot;:&quot;$&quot;},{&quot;id&quot;:2,&quot;name&quot;:&quot;Velcote Liquid&quot;,&quot;amount&quot;:318.00,&quot;currency&quot;:&quot;$&quot;},{&quot;id&quot;:3,&quot;name&quot;:&quot;Pedigree PRO&quot;,&quot;amount&quot;:923.00,&quot;currency&quot;:&quot;$&quot;},{&quot;id&quot;:4,&quot;name&quot;:&quot;Velcote Premium&quot;,&quot;amount&quot;:318.00,&quot;currency&quot;:&quot;$&quot;},{&quot;id&quot;:5,&quot;name&quot;:&quot;Mantra Kismis&quot;,&quot;amount&quot;:63.00,&quot;currency&quot;:&quot;$&quot;},{&quot;id&quot;:6,&quot;name&quot;:&quot;Haldiram Noodles&quot;,&quot;amount&quot;:320.00,&quot;currency&quot;:&quot;$&quot;},{&quot;id&quot;:7,&quot;name&quot;:&quot;Bingo Mad Angles &quot;,&quot;amount&quot;:912.00,&quot;currency&quot;:&quot;$&quot;},{&quot;id&quot;:8,&quot;name&quot;:&quot;Bikani Rasogolla&quot;,&quot;amount&quot;:318.00,&quot;currency&quot;:&quot;$&quot;}]
+The value at index 1Response{name='Kennel Kitchen', currency='$', id='1', quantity='0', amount='635.00'}
+16:46:16.741 - [OnlineshopApiClient] INFO  : Initiated petclinic.api.onlineshop.OnlineshopApiClient instance
+16:46:16.741 - [ApiCaller] INFO  : Request:
+Request URI:	http://petclinicapi.e46708b92c054086909b.eastus.aksapp.io/petclinic/api/shop/getproducts
+Body:			&lt;none&gt;
+16:46:17.489 - [ApiCaller] INFO  : Response:
+HTTP/1.1 200 
+[{&quot;id&quot;:1,&quot;name&quot;:&quot;Kennel Kitchen&quot;,&quot;amount&quot;:635.00,&quot;currency&quot;:&quot;$&quot;},{&quot;id&quot;:2,&quot;name&quot;:&quot;Velcote Liquid&quot;,&quot;amount&quot;:318.00,&quot;currency&quot;:&quot;$&quot;},{&quot;id&quot;:3,&quot;name&quot;:&quot;Pedigree PRO&quot;,&quot;amount&quot;:923.00,&quot;currency&quot;:&quot;$&quot;},{&quot;id&quot;:4,&quot;name&quot;:&quot;Velcote Premium&quot;,&quot;amount&quot;:318.00,&quot;currency&quot;:&quot;$&quot;},{&quot;id&quot;:5,&quot;name&quot;:&quot;Mantra Kismis&quot;,&quot;amount&quot;:63.00,&quot;currency&quot;:&quot;$&quot;},{&quot;id&quot;:6,&quot;name&quot;:&quot;Haldiram Noodles&quot;,&quot;amount&quot;:320.00,&quot;currency&quot;:&quot;$&quot;},{&quot;id&quot;:7,&quot;name&quot;:&quot;Bingo Mad Angles &quot;,&quot;amount&quot;:912.00,&quot;currency&quot;:&quot;$&quot;},{&quot;id&quot;:8,&quot;name&quot;:&quot;Bikani Rasogolla&quot;,&quot;amount&quot;:318.00,&quot;currency&quot;:&quot;$&quot;}]
+16:46:18.853 - [OnlineshopApiClient] INFO  : Initiated petclinic.api.onlineshop.OnlineshopApiClient instance
+16:46:18.861 - [ApiCaller] INFO  : Request:
+Request URI:	http://petclinicapi.e46708b92c054086909b.eastus.aksapp.io/petclinic/api/shop/addtocart/
+Body:
+{&quot;name&quot;:&quot;Shubhangi&quot;,&quot;currency&quot;:&quot;INR&quot;,&quot;id&quot;:&quot;61&quot;,&quot;amount&quot;:&quot;100.00&quot;,&quot;quantity&quot;:0}
+16:46:19.450 - [ApiCaller] INFO  : Response:
+HTTP/1.1 200 
+{&quot;id&quot;:61,&quot;name&quot;:&quot;Shubhangi&quot;,&quot;amount&quot;:100.00,&quot;quantity&quot;:1,&quot;currency&quot;:&quot;INR&quot;}
+16:46:19.459 - [OnlineshopApiClient] INFO  : Initiated petclinic.api.onlineshop.OnlineshopApiClient instance
+16:46:19.460 - [ApiCaller] INFO  : Request:
+Request URI:	http://petclinicapi.e46708b92c054086909b.eastus.aksapp.io/petclinic/api/shop/clearcart
+Body:			&lt;none&gt;
+16:46:20.037 - [ApiCaller] INFO  : Response:
+HTTP/1.1 200 
+Cart empty.
+16:46:20.074 - [OnlineshopApiClient] INFO  : Initiated petclinic.api.onlineshop.OnlineshopApiClient instance
+16:46:20.075 - [ApiCaller] INFO  : Request:
+Request URI:	http://petclinicapi.e46708b92c054086909b.eastus.aksapp.io/petclinic/api/shop/getproducts
+Body:			&lt;none&gt;
+16:46:20.655 - [ApiCaller] INFO  : Response:
+HTTP/1.1 200 
+[{&quot;id&quot;:1,&quot;name&quot;:&quot;Kennel Kitchen&quot;,&quot;amount&quot;:635.00,&quot;currency&quot;:&quot;$&quot;},{&quot;id&quot;:2,&quot;name&quot;:&quot;Velcote Liquid&quot;,&quot;amount&quot;:318.00,&quot;currency&quot;:&quot;$&quot;},{&quot;id&quot;:3,&quot;name&quot;:&quot;Pedigree PRO&quot;,&quot;amount&quot;:923.00,&quot;currency&quot;:&quot;$&quot;},{&quot;id&quot;:4,&quot;name&quot;:&quot;Velcote Premium&quot;,&quot;amount&quot;:318.00,&quot;currency&quot;:&quot;$&quot;},{&quot;id&quot;:5,&quot;name&quot;:&quot;Mantra Kismis&quot;,&quot;amount&quot;:63.00,&quot;currency&quot;:&quot;$&quot;},{&quot;id&quot;:6,&quot;name&quot;:&quot;Haldiram Noodles&quot;,&quot;amount&quot;:320.00,&quot;currency&quot;:&quot;$&quot;},{&quot;id&quot;:7,&quot;name&quot;:&quot;Bingo Mad Angles &quot;,&quot;amount&quot;:912.00,&quot;currency&quot;:&quot;$&quot;},{&quot;id&quot;:8,&quot;name&quot;:&quot;Bikani Rasogolla&quot;,&quot;amount&quot;:318.00,&quot;currency&quot;:&quot;$&quot;}]
+16:46:22.065 - [OnlineshopApiClient] INFO  : Initiated petclinic.api.onlineshop.OnlineshopApiClient instance
+16:46:22.070 - [ApiCaller] INFO  : Request:
+Request URI:	http://petclinicapi.e46708b92c054086909b.eastus.aksapp.io/petclinic/api/shop/addtocart
+Body:
+{&quot;name&quot;:&quot;TestOrderSummary&quot;,&quot;currency&quot;:&quot;$&quot;,&quot;id&quot;:&quot;4&quot;,&quot;amount&quot;:&quot;500.00&quot;,&quot;quantity&quot;:0}
+16:46:22.720 - [ApiCaller] INFO  : Response:
+HTTP/1.1 200 
+{&quot;id&quot;:4,&quot;name&quot;:&quot;TestOrderSummary&quot;,&quot;amount&quot;:500.00,&quot;quantity&quot;:1,&quot;currency&quot;:&quot;$&quot;}
+16:46:22.725 - [OnlineshopApiClient] INFO  : Initiated petclinic.api.onlineshop.OnlineshopApiClient instance
+16:46:23.120 - [ApiCaller] INFO  : Request:
+Request URI:	http://petclinicapi.e46708b92c054086909b.eastus.aksapp.io/petclinic/api/shop/ordersummary
+Body:			&lt;none&gt;
+16:46:23.738 - [ApiCaller] INFO  : Response:
+HTTP/1.1 200 
+{&quot;cart&quot;:[{&quot;id&quot;:4,&quot;name&quot;:&quot;TestOrderSummary&quot;,&quot;amount&quot;:500.00,&quot;quantity&quot;:1,&quot;currency&quot;:&quot;$&quot;}],&quot;totalAmount&quot;:500.00}
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 6.3</a> at 26-Apr-2021, 4:46:42 PM</p>
+</div>
+</div>
+</body>
+</html>
