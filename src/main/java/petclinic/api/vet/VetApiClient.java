@@ -12,7 +12,7 @@ import io.restassured.http.Headers;
 import io.restassured.http.Method;
 import io.restassured.internal.mapping.GsonMapper;
 import io.restassured.mapper.ObjectMapperType;
-import petclinic.api.vet.data.Response;
+
 
 public class VetApiClient extends ApiClient {
 
@@ -25,9 +25,9 @@ public class VetApiClient extends ApiClient {
     }
 
     //Verify status code
-    public Integer getStatus() throws InvalidResponseException {
+    public int getStatus() throws InvalidResponseException {
 
-        ApiResponse response = caller.executeRequest(getRequest(), Method.GET, Response.class);
+        ApiResponse response = caller.executeRequest(getRequest(), Method.POST, Response.class);
         return response.getHttpStatusCode();
     }
     //Header verification
@@ -46,7 +46,7 @@ public class VetApiClient extends ApiClient {
     }
 
     //POST Add Vet
-    public Response createdProduct(Response response) throws InvalidResponseException {
+    public Response addVet(Response response) throws InvalidResponseException {
         ApiRequest request = getRequest().withBody(response).withHeader("Content-Type", "application/json");
         ApiResponse<Response> response1 = caller.executeRequest(request, Method.POST, Response.class);
         return response1.getContent();
