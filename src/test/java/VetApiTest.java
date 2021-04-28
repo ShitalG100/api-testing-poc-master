@@ -4,8 +4,7 @@ import io.restassured.http.Headers;
 import org.assertj.core.api.SoftAssertions;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
-import petclinic.api.onlineshop.OnlineshopApiClient;
-import petclinic.api.onlineshop.data.Response;
+import petclinic.api.vet.data.Response;
 import petclinic.api.vet.VetApiClient;
 import petclinic.api.vet.*;
 
@@ -54,7 +53,7 @@ public class VetApiTest {
         SoftAssertions softly = new SoftAssertions();
         System.out.println("The value at index 1" + getvet[0]);
         softly.assertThat(getvet[0].getId()).as("ID is 100:").isEqualTo("100");
-        softly.assertThat(getvet[1].getName()).as("the given name is shital:  ").isEqualTo("Shital");
+        softly.assertThat(getvet[1].getFirstName()).as("the given name is shital:  ").isEqualTo("Shital");
 
 
     }

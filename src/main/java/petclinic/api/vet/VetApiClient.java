@@ -4,14 +4,15 @@ import api.common.ApiClient;
 import api.common.ApiRequest;
 import api.common.ApiResponse;
 import api.common.exception.InvalidResponseException;
-import petclinic.api.onlineshop.data.OrderSummary;
-import petclinic.api.onlineshop.data.Response;
+import petclinic.api.vet.data.SpecialtiesItem;
+import petclinic.api.vet.data.Response;
 import com.google.gson.GsonBuilder;
 import io.restassured.config.ObjectMapperConfig;
 import io.restassured.http.Headers;
 import io.restassured.http.Method;
 import io.restassured.internal.mapping.GsonMapper;
 import io.restassured.mapper.ObjectMapperType;
+import petclinic.api.vet.data.Response;
 
 public class VetApiClient extends ApiClient {
 
