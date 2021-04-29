@@ -4,7 +4,7 @@ import io.restassured.http.Headers;
 import org.assertj.core.api.SoftAssertions;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
-import petclinic.api.vet.data.*;
+import petclinic.api.vet.data.Response;
 import petclinic.api.vet.VetApiClient;
 import petclinic.api.vet.*;
 
@@ -24,8 +24,7 @@ public class VetApiTest {
     }
 
     //Status code
-    /*
-    @Test
+   /* @Test
     public void getReponse_StatusCode() throws InvalidResponseException {
         VetApiClient client = new VetApiClient(apiUrl, "/api/vets");
         int statusCode = client.getStatus();
@@ -43,7 +42,6 @@ public class VetApiTest {
         SoftAssertions softly = new SoftAssertions();
 
         Headers contentType = client.getHeader("Content-Type");
-        System.out.println("The value at statusCode" + contentType);
         softly.assertThat(contentType).isNotNull();
 
         softly.assertAll();
@@ -53,40 +51,32 @@ public class VetApiTest {
     //Get Vet details
     @Test
     public void getVet_Details() throws InvalidResponseException {
-        VetApiClient client = new VetApiClient(apiUrl,  "/api/vets");
+        VetApiClient client = new VetApiClient(apiUrl, "/api/vets");
         Response[] getvet = client.getResponses();
         int statusCode = client.getStatus();
         SoftAssertions softly = new SoftAssertions();
+        System.out.println("The value of status" + statusCode);
         System.out.println("The value at index 1" + getvet[0]);
-        System.out.println("The value at statusCode" + statusCode);
         softly.assertThat(statusCode).isEqualTo(200);
-        softly.assertThat(getvet[0].getId()).as("ID is 1:").isEqualTo("1");
-        softly.assertThat(getvet[0].getFirstName()).as("the given name is James:  ").isEqualTo("James");    }
+        softly.assertThat(getvet[0].getId()).as("ID is 100:").isEqualTo("100");
+        softly.assertThat(getvet[0].getFirstName()).as("the given name is shital:  ").isEqualTo("Shital");    }
 
 
     //Create Vet using hardcoding value
-/*
+    /*
     @Test
     public void addVet_checkId_ShouldReturnNewVet () throws InvalidResponseException, IOException {
-
-
-        VetApiClient client = new VetApiClient(apiUrl,"/api/vets");
-        Response.specialties.add("1");
-        Response.specialties.add("Surgery");
-        Response vet = client.addVet(Response.builder()
+        VetApiClient client = new VetApiClient(apiUrl, "/api/vets");
+        Response vet = client.addVet(builder()
                 .firstName("Shital")
                 .id(300)
                 .lastName("Gawande")
-                .Specialties(0)
-                .Specialties(1)
+                .Specialties(1,"Surgery")
                 .build());
-
         SoftAssertions softly = new SoftAssertions();
         softly.assertThat(vet.getFirstName()).as("First name should be Shital").isEqualTo("Shital");
         softly.assertThat(vet.getLastName()).as("last name should be Gawande").isEqualTo("Gawande");
         softly.assertThat(vet.getId()).as("A unique ID should be populated").isNotNull();
-
         softly.assertAll();
-
     }*/
 }
