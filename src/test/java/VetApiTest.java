@@ -24,7 +24,7 @@ public class VetApiTest {
     }
 
     //Status code
-    /
+    /*
     @Test
     public void getReponse_StatusCode() throws InvalidResponseException {
         VetApiClient client = new VetApiClient(apiUrl, "/api/vets");
@@ -33,7 +33,7 @@ public class VetApiTest {
         softly.assertThat(statusCode).isEqualTo(200);
         softly.assertAll();
 
-    }
+    }*/
 
     //Header verfication
     @Test
