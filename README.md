@@ -1,4 +1,4 @@
-pre-requisites - download code and do setup from https://github.com/Shubhangi-0131/api-testing-poc
+pre-requisites - download code and do setup from https://github.com/ShitalG100/api-testing-poc
 
 Project has 2 sub-modules 
 
