@@ -26,6 +26,7 @@ public class VetApiTest {
     //Status code
    /* @Test
     public void getReponse_StatusCode() throws InvalidResponseException {
+	//checking git commands
         VetApiClient client = new VetApiClient(apiUrl, "/api/vets");
         int statusCode = client.getStatus();
         SoftAssertions softly = new SoftAssertions();
@@ -34,19 +35,6 @@ public class VetApiTest {
 
     }*/
 
-    //Header verfication
-    @Test
-    public void getReponse_Header() throws InvalidResponseException {
-        VetApiClient client = new VetApiClient(apiUrl, "/api/vets");
-
-        SoftAssertions softly = new SoftAssertions();
-
-        Headers contentType = client.getHeader("Content-Type");
-        softly.assertThat(contentType).isNotNull();
-
-        softly.assertAll();
-
-    }
 
     //Get Vet details
     @Test
